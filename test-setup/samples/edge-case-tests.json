@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Very Short Text",
+    "description": "Test with minimal text content",
+    "expectedDuration": "3-5 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Hi!",
+          "searchTerms": ["hello", "greeting", "wave"]
+        }
+      ],
+      "config": {
+        "paddingBack": 2000,
+        "music": "happy",
+        "voice": "af_heart",
+        "orientation": "portrait",
+        "musicVolume": "medium",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#4CAF50"
+      }
+    }
+  },
+  {
+    "name": "Long Text",
+    "description": "Test with extended text content",
+    "expectedDuration": "25-35 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "This is a comprehensive test of the video generation system using a much longer piece of text to ensure that the system can handle extended content properly. We want to verify that the audio generation, caption synchronization, and background music all work correctly even when dealing with longer narratives that might span multiple sentences and require sustained attention from the viewer.",
+          "searchTerms": ["storytelling", "narrative", "content"]
+        }
+      ],
+      "config": {
+        "paddingBack": 3000,
+        "music": "contemplative",
+        "voice": "bm_lewis",
+        "orientation": "landscape",
+        "musicVolume": "low",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#795548"
+      }
+    }
+  },
+  {
+    "name": "Special Characters",
+    "description": "Test with special characters and punctuation",
+    "expectedDuration": "8-12 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Testing special characters: Hello! How are you? I'm fine, thanks. Numbers: 123, 456. Symbols: @#$%^&*().",
+          "searchTerms": ["text", "symbols", "communication"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "chill",
+        "voice": "af_bella",
+        "orientation": "portrait",
+        "musicVolume": "medium",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#FF9800"
+      }
+    }
+  },
+  {
+    "name": "Multiple Search Terms",
+    "description": "Test with many search terms",
+    "expectedDuration": "8-12 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "This test uses multiple search terms to see how the system handles variety in background video selection.",
+          "searchTerms": ["nature", "technology", "people", "city", "ocean", "mountains", "sunset", "flowers"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "happy",
+        "voice": "am_echo",
+        "orientation": "landscape",
+        "musicVolume": "high",
+        "captionPosition": "top",
+        "captionBackgroundColor": "#E91E63"
+      }
+    }
+  },
+  {
+    "name": "No Music Test",
+    "description": "Test with music muted to focus on voice clarity",
+    "expectedDuration": "8-12 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "This video has no background music so you can clearly hear the voice quality and pronunciation.",
+          "searchTerms": ["voice", "clear", "audio"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "chill",
+        "voice": "af_nova",
+        "orientation": "portrait",
+        "musicVolume": "muted",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#607D8B"
+      }
+    }
+  },
+  {
+    "name": "Maximum Padding",
+    "description": "Test with extended padding to check end screen",
+    "expectedDuration": "12-18 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "This test has extra padding at the end to verify the end screen behavior.",
+          "searchTerms": ["ending", "conclusion", "outro"]
+        }
+      ],
+      "config": {
+        "paddingBack": 5000,
+        "music": "hopeful",
+        "voice": "bm_george",
+        "orientation": "landscape",
+        "musicVolume": "low",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#3F51B5"
+      }
+    }
+  }
+]

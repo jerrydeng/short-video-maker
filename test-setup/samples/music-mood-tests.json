@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Happy Music Test",
+    "description": "Test happy/upbeat music with positive content",
+    "expectedDuration": "8-12 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "What a beautiful sunny day! The birds are singing and everything feels amazing.",
+          "searchTerms": ["sunshine", "flowers", "happy", "nature"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "happy",
+        "voice": "af_bella",
+        "orientation": "portrait",
+        "musicVolume": "high",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#FFD700"
+      }
+    }
+  },
+  {
+    "name": "Dark Music Test",
+    "description": "Test dark/mysterious music with serious content",
+    "expectedDuration": "10-15 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "In the depths of the forest, shadows dance between ancient trees, hiding secrets untold.",
+          "searchTerms": ["forest", "shadows", "dark", "mysterious"]
+        }
+      ],
+      "config": {
+        "paddingBack": 2000,
+        "music": "dark",
+        "voice": "am_echo",
+        "orientation": "landscape",
+        "musicVolume": "medium",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#330033"
+      }
+    }
+  },
+  {
+    "name": "Chill Music Test",
+    "description": "Test relaxed/chill music with calm content",
+    "expectedDuration": "8-12 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Take a deep breath and let the peaceful waves wash away your worries.",
+          "searchTerms": ["ocean", "waves", "peaceful", "meditation"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "chill",
+        "voice": "af_river",
+        "orientation": "landscape",
+        "musicVolume": "low",
+        "captionPosition": "top",
+        "captionBackgroundColor": "#4A90E2"
+      }
+    }
+  },
+  {
+    "name": "Funny Music Test",
+    "description": "Test funny/quirky music with humorous content",
+    "expectedDuration": "6-10 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Why did the programmer quit his job? Because he didn't get arrays!",
+          "searchTerms": ["comedy", "funny", "cartoon", "silly"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1000,
+        "music": "funny",
+        "voice": "af_nova",
+        "orientation": "portrait",
+        "musicVolume": "medium",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#FF6B6B"
+      }
+    }
+  },
+  {
+    "name": "Sad Music Test",
+    "description": "Test melancholic music with emotional content",
+    "expectedDuration": "10-15 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Sometimes the most beautiful moments are found in our memories of what used to be.",
+          "searchTerms": ["rain", "melancholy", "memories", "nostalgic"]
+        }
+      ],
+      "config": {
+        "paddingBack": 2000,
+        "music": "sad",
+        "voice": "bf_emma",
+        "orientation": "portrait",
+        "musicVolume": "low",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#6C7B7F"
+      }
+    }
+  },
+  {
+    "name": "Hopeful Music Test",
+    "description": "Test hopeful/inspiring music with motivational content",
+    "expectedDuration": "12-18 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Every sunrise brings new possibilities. Today is your chance to make a difference in the world.",
+          "searchTerms": ["sunrise", "hope", "inspiration", "motivation"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "hopeful",
+        "voice": "am_liam",
+        "orientation": "landscape",
+        "musicVolume": "medium",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#FF9500"
+      }
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Female Voice - Warm",
+    "description": "Test female voice with warm characteristics",
+    "expectedDuration": "8-10 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Hello there! I'm a warm female voice perfect for friendly and approachable content.",
+          "searchTerms": ["friendly", "warm", "welcoming"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "chill",
+        "voice": "af_heart",
+        "orientation": "portrait",
+        "musicVolume": "low",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#E91E63"
+      }
+    }
+  },
+  {
+    "name": "Male Voice - Professional",
+    "description": "Test male voice with professional tone",
+    "expectedDuration": "8-10 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Good day. I represent a professional male voice ideal for business and educational content.",
+          "searchTerms": ["business", "professional", "corporate"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "contemplative",
+        "voice": "am_adam",
+        "orientation": "landscape",
+        "musicVolume": "low",
+        "captionPosition": "center",
+        "captionBackgroundColor": "#1976D2"
+      }
+    }
+  },
+  {
+    "name": "British Voice - Elegant",
+    "description": "Test British accent voice for sophisticated content",
+    "expectedDuration": "8-10 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Greetings! This is a British voice bringing elegance and sophistication to your content.",
+          "searchTerms": ["elegant", "sophisticated", "classy"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "hopeful",
+        "voice": "bf_emma",
+        "orientation": "portrait",
+        "musicVolume": "medium",
+        "captionPosition": "top",
+        "captionBackgroundColor": "#9C27B0"
+      }
+    }
+  },
+  {
+    "name": "Modern Voice - Tech",
+    "description": "Test modern voice for technology content",
+    "expectedDuration": "8-10 seconds",
+    "input": {
+      "scenes": [
+        {
+          "text": "Hey everyone! I'm a modern voice perfect for tech reviews, tutorials, and innovation content.",
+          "searchTerms": ["technology", "modern", "innovation"]
+        }
+      ],
+      "config": {
+        "paddingBack": 1500,
+        "music": "excited",
+        "voice": "af_nova",
+        "orientation": "landscape",
+        "musicVolume": "medium",
+        "captionPosition": "bottom",
+        "captionBackgroundColor": "#00BCD4"
+      }
+    }
+  }
+]

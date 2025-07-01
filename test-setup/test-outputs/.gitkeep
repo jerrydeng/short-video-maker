@@ -1,0 +1,9 @@
+# This file ensures the test-outputs directory is tracked by git
+# Generated videos will be saved in subdirectories here:
+# - basic-tests/
+# - music-tests/
+# - voice-tests/
+# - visual-tests/
+# - edge-case-tests/
+# - performance-tests/
+# - demo-outputs/
