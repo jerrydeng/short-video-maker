@@ -183,11 +183,65 @@ export class APIRouter {
           });
           return;
         }
+
+        // Set appropriate content type
+        if (fileName.endsWith(".mp3")) {
+          res.setHeader("Content-Type", "audio/mpeg");
+        } else if (fileName.endsWith(".wav")) {
+          res.setHeader("Content-Type", "audio/wav");
+        } else if (fileName.endsWith(".ogg")) {
+          res.setHeader("Content-Type", "audio/ogg");
+        }
+
         const musicFileStream = fs.createReadStream(musicFilePath);
         musicFileStream.on("error", (error) => {
           logger.error(error, "Error reading music file");
           res.status(500).json({
             error: "Error reading music file",
+            fileName,
+          });
+        });
+        musicFileStream.pipe(res);
+      },
+    );
+
+    // New endpoint for expanded music library
+    this.router.get(
+      "/music/expanded/:mood/:fileName",
+      (req: ExpressRequest, res: ExpressResponse) => {
+        const { mood, fileName } = req.params;
+        if (!mood || !fileName) {
+          res.status(400).json({
+            error: "mood and fileName are required",
+          });
+          return;
+        }
+        
+        const expandedMusicPath = path.join(this.config.musicDirPath, "expanded");
+        const musicFilePath = path.join(expandedMusicPath, mood, fileName);
+        
+        if (!fs.existsSync(musicFilePath)) {
+          res.status(404).json({
+            error: "expanded music file not found",
+          });
+          return;
+        }
+
+        // Set appropriate content type
+        if (fileName.endsWith(".mp3")) {
+          res.setHeader("Content-Type", "audio/mpeg");
+        } else if (fileName.endsWith(".wav")) {
+          res.setHeader("Content-Type", "audio/wav");
+        } else if (fileName.endsWith(".ogg")) {
+          res.setHeader("Content-Type", "audio/ogg");
+        }
+
+        const musicFileStream = fs.createReadStream(musicFilePath);
+        musicFileStream.on("error", (error) => {
+          logger.error(error, "Error reading expanded music file");
+          res.status(500).json({
+            error: "Error reading expanded music file",
+            mood,
             fileName,
           });
         });
