@@ -1,0 +1,47 @@
+{
+  "name": "Multi-Scene Test",
+  "description": "Test multiple scenes with smooth transitions and varied content",
+  "expectedDuration": "20-30 seconds",
+  "input": {
+    "scenes": [
+      {
+        "text": "Welcome to the future of technology.",
+        "searchTerms": ["technology", "futuristic", "innovation"]
+      },
+      {
+        "text": "Where artificial intelligence meets human creativity.",
+        "searchTerms": ["artificial intelligence", "creativity", "human"]
+      },
+      {
+        "text": "Creating possibilities we never imagined.",
+        "searchTerms": ["possibilities", "imagination", "creation"]
+      },
+      {
+        "text": "The journey starts now.",
+        "searchTerms": ["journey", "beginning", "adventure"]
+      }
+    ],
+    "config": {
+      "paddingBack": 2000,
+      "music": "hopeful",
+      "voice": "af_heart",
+      "orientation": "landscape",
+      "musicVolume": "medium",
+      "captionPosition": "center",
+      "captionBackgroundColor": "#2196F3"
+    }
+  },
+  "validation": {
+    "checkAudio": true,
+    "checkCaptions": true,
+    "checkDuration": true,
+    "checkTransitions": true,
+    "expectedElements": [
+      "Smooth scene transitions",
+      "Consistent audio levels",
+      "Synchronized captions",
+      "Coherent visual flow",
+      "Appropriate padding at end"
+    ]
+  }
+}

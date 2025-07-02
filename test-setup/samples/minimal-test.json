@@ -1,0 +1,33 @@
+{
+  "name": "Minimal Test",
+  "description": "Quick validation test with simple content",
+  "expectedDuration": "5-10 seconds",
+  "input": {
+    "scenes": [
+      {
+        "text": "This is a quick test of the video generation system.",
+        "searchTerms": ["technology", "computer", "digital"]
+      }
+    ],
+    "config": {
+      "paddingBack": 1000,
+      "music": "chill",
+      "voice": "af_heart",
+      "orientation": "portrait",
+      "musicVolume": "medium",
+      "captionPosition": "bottom",
+      "captionBackgroundColor": "#0066CC"
+    }
+  },
+  "validation": {
+    "checkAudio": true,
+    "checkCaptions": true,
+    "checkDuration": true,
+    "expectedElements": [
+      "Clear speech",
+      "Background music",
+      "Captions at bottom",
+      "Technology-related background video"
+    ]
+  }
+}
